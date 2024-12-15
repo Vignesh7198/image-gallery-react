@@ -5,6 +5,14 @@
      background-color: pink;
  }
 
+ * {
+    -ms-overflow-style:none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+*::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
  .card_image{
     width:250px;
     height: 250px;
@@ -33,6 +41,8 @@
 .card_image:hover{
    transform: rotate(360deg) scaleX(1.5) scaleY(1.5);
 }
+
+
 
 
 
