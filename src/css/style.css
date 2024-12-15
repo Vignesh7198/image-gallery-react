@@ -1,0 +1,47 @@
+*{
+     margin: 0; 
+     padding: 0; 
+     box-sizing: border-box; 
+     background-color: pink;
+ }
+
+ .card_image{
+    width:250px;
+    height: 250px;
+    border: 10px solid black;
+    margin: auto;
+    transition: 2s;
+ }
+
+ .card_root{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-top: 5%;
+ }
+
+.card_container{
+    flex-basis: 30%;
+    margin:auto;
+    display: flex;
+
+}
+
+
+.card_image:hover{
+   transform: rotate(360deg) scaleX(1.5) scaleY(1.5);
+}
+
+
+
+@media screen and (max-width:500px) {
+   
+   .card_container{
+      flex-basis: 90%;
+   }
+
+  
+
+}
